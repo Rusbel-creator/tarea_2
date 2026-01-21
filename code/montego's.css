@@ -1,0 +1,603 @@
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p, span, li, a {
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("/css/tarea_2/fonts/DancingScript-Regular.ttf") format("truetype");
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-container, .spacer {
+    flex: 1;
+}
+
+.links {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    transition: padding 0.3s ease;
+}
+
+.links:hover {
+    padding: 0.8rem;
+}
+
+/* HOME */
+
+.home__title {
+    margin: 75px;
+    z-index: 0;
+}
+
+h1 {
+    font-family: "Dancing Script";
+    text-align: center;
+}
+
+.home__p {
+    text-wrap: pretty;
+    margin: 5px;
+}
+
+.home-section {
+    width: 900px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 125px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 75px;
+    z-index: 0;
+    transition: all 0.4s ease;
+}
+
+.home-section:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.section__image {
+    border-radius: 4px;
+}
+
+.home__text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.home__img-container {
+    width: 350px;
+}
+
+.text--container {
+    margin-left: 25px;
+}
+
+/* CONTACTOS */
+
+.contact-title {
+    margin: 75px;
+}
+
+.contact-subtitle {
+    margin: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 50px;
+    transition: all 0.4s ease;
+}
+
+.contact-form-container:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.contact-input-container {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+}
+
+.contact-input-container input {
+    width: 100%;
+    border: none;
+    overflow: none;
+    outline: none;
+}
+
+.contact-textarea-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 30px;
+    transition: all 0.4s ease;
+}
+
+.contact-textarea-container textarea {
+    width: 100%;
+    max-height: max-content;
+    border: none;
+    overflow: none;
+    outline: none;
+    resize: vertical;
+}
+
+.contact-submit {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-input-container:hover, .contact-textarea-container:hover {
+    transform: scale(1.04);
+}
+
+.contact-submit:hover {
+    transform: scale(1.06);
+}
+
+.contact-information {
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.contact-information h4 {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.contact-information p {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.contact-information:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+/* NOSOTROS */
+
+.us__title {
+    margin: 75px;
+}
+
+.us__parraf {
+    border: 1px solid #ccc;
+    padding: 75px;
+    border-radius: 50px;
+    margin: auto;
+    font-size: 18px;
+    max-width: 1000px;
+    text-wrap: pretty;
+    transition: all 0.4s ease;
+}
+
+.origin {
+    border: 1px solid #ccc;
+    padding: 75px;
+    border-radius: 50px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 175px auto;
+    transition: all 0.4s ease;
+}
+
+.origin p {
+    padding: 25px;
+    text-wrap: pretty;
+    font-size: 18px;
+}
+
+.us__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.mission-vision-container {
+    border-radius: 50px;
+    padding: 50px;
+    margin: 50px 0;
+    border: 1px solid #ccc;
+    max-width: 500px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.mission-vision-container h2 {
+    margin-bottom: 15px;
+}
+
+.mission-vision-container i {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    gap: 40px;
+}
+
+.values-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.values-container {
+    max-width: 375px;
+    border-radius: 50px;
+    padding: 50px;
+    margin-bottom: 75px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.values-container h3 {
+    margin-bottom: 15px;
+}
+
+.values-container i {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.us__image-title {
+    margin-top: 50px;
+    font-size: 36px;
+    font-family: "Dancing Script";
+}
+
+.us__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.us__image-subtitle {
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+.creators__container {
+    display: flex;
+}
+
+.creators {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 75px;
+    text-align: center;
+}
+
+.us__parraf:hover, .origin:hover, .mission-vision-container:hover, .values-container:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+/* PEDIDOS */
+
+.orders-title {
+    margin: 50px;
+}
+
+.orders-description {
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.form__container {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 50px;
+    transition: all 0.4s ease;
+}
+
+.basic-information h4 {
+    margin-bottom: 15px;
+}
+
+.input-container {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.input-container input {
+    width: 100%;
+    border: none;
+    overflow: none;
+    outline: none;
+}
+
+.input-container textarea {
+    width: 100%;
+    max-height: max-content;
+    border: none;
+    overflow: none;
+    outline: none;
+    resize: vertical;
+}
+
+.dishes h4, .drinks h4 {
+    margin-bottom: 15px;
+}
+
+.dishes-container, .drinks-container {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+.dishes-container select, .drinks-container select {
+    width: 100%;
+    border: none;
+    overflow: none;
+    outline: none;
+}
+
+.details h4 {
+    margin-bottom: 15px;
+}
+
+.details-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.details textarea {
+    width: 100%;
+    max-height: max-content;
+    border: none;
+    overflow: none;
+    outline: none;
+    resize: vertical;
+}
+
+.orders-submit {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form__container:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.input-container, .dishes-container, .drinks-container, .details-container {
+    transition: all 0.4s ease;
+}
+
+.input-container:hover, .dishes-container:hover, .drinks-container:hover, .details-container:hover {
+    transform: scale(1.04);
+}
+
+.orders-submit:hover {
+    transform: scale(1.06);
+}
+
+/* PRODUCTOS */
+
+.products__title {
+    position: relative;
+    top: 50px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    margin: 75px;
+}
+
+.food__container {
+    width: 350px;
+    margin: 45px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.food__container h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.food__container p {
+    text-align: center;
+    text-wrap: pretty;
+    margin: 10px;
+    font-family: "poppins", sans-serif;
+    color: #444;
+}
+
+.food__container img {
+    display: block;
+    margin: auto;
+}
+
+.products {
+    width: 250px;
+    height: 175px;
+    border-radius: 4px;
+}
+
+.food__container:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.prices {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prices:hover {
+    transform: scale(1.06);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #111;
+    padding: 40px 20px 20px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 575px;
+}
+
+.footer__links, .footer__title {
+    color: #fff;
+    margin: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer__title {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer__links {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer__links:hover {
+    color: #fff;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding-bottom: 30px;
+}
+
+.footer__bottom {
+    background-color: #111;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.copyright {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ccc;
+    margin-top: 15px;
+}

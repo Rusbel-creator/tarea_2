@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="icon" href="/css/tarea_2/image/montego's_fovicon.png" type="image/png">
+    <link rel="stylesheet" href="montego's.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="/css/tarea_2/image/montego's_logo.png" alt="logotipo" class="logo">
+        </div>
+        <nav class="links__nav">
+            <a class="links" href="index.html">Inicio</a>
+            <a class="links" href="nosotros.html">Nosotros</a>
+            <a class="links" href="productos.html">Productos</a>
+            <a class="links" href="pedidos.html">Pedidos</a>
+            <a class="links" href="contactos.html">Contactos</a>
+        </nav>
+        <div class="spacer"></div>
+    </header>
+
+    <h1 class="orders-title">Realiza tu Pedido</h1>
+    <p class="orders-description">Selecciona tus platillos y completa tus datos para procesar tu pedido en Montego's Restaurant.</p>
+
+    <div class="form__container">
+        <form class="orders__form">
+            <div class="basic-information">
+                <h4>Información del usuario</h4>
+                <div class="input-container">
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="input-container">
+                    <input type="tel" placeholder="Teléfono">
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="Gmail">
+                </div>
+                <div class="input-container">
+                    <textarea placeholder="Dirección" rows="1"></textarea>
+                </div>
+            </div>
+            <div class="dishes">
+                <h4>Selecciona tus platillos</h4>
+                <div class="dishes-container">
+                    <select>
+                        <option>ninguno</option>
+                        <option>Dorada con salsa calabrese y gnocchis trufados</option>
+                        <option>Dorada con salsa de mantequilla nantes</option>
+                        <option>Entrecote de ternera con pastel de patatas</option>
+                        <option>Pato a la naranja</option>
+                        <option>Solomillo de cerdo con girgolas salteadas</option>
+                        <option>Solomillo de cerdo con salsa cremosa de setas</option>
+                        <option>Solomillo de cerdo con salsa demiglace</option>
+                        <option>Solomillo de cerdo oriental con setas shiitake</option>
+                        <option>Yakiniku entrecot de ternera con salsa japonesa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="drinks">
+                <h4>Selecciona tus bebidas</h4>
+                <div class="drinks-container">
+                    <select>
+                        <option>Ninguno</option>
+                        <option>Agua mineral</option>
+                        <option>Refresco</option>
+                        <option>Vino</option>
+                        <option>Vino blanco</option>
+                    </select>
+                </div>
+            </div>
+            <div class="details">
+                <h4>Detalles adicionales</h4>
+                <div class="details-container">
+                    <textarea placeholder="Escribe aquí cualquier instrucción especial para tu pedido..." rows="4"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="orders-submit">Realizar Pedido</button>
+        </form>
+    </div>
+
+<footer>
+    <div class="footer__container">
+        <div class="footer__column">
+            <h4 class="footer__title">Servicios</h4>
+            <ul>
+                <li><a class="footer__links" href="productos.html">Productos</a></li>
+                <li><a class="footer__links" href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <h4 class="footer__title">Compañia</h4>
+            <ul>
+                <li><a class="footer__links" href="nosotros.html">Nosotros</a></li>
+                <li><a class="footer__links" href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="copyright">© 2026 Montego's Restaurant</p>
+    </div>
+</footer>
+
+</body>
+</html>

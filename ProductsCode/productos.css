@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("DancingScript-Regular.ttf") format("truetype");
+}
+
+.prod-container {
+    display: flex;
+    margin: 25px auto;
+}
+
+h1 {
+    font-family: "Dancing Script";
+    font-size: 16px;
+    text-align: left;
+}
+
+button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 5px;
+    padding: 15px 75px;
+    border-radius: 50px;
+}
+
+img {
+    width: 75%;
+    margin-left: 13%;
+}
+
+.image {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.information {
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+    margin-bottom: 75px;
+}
